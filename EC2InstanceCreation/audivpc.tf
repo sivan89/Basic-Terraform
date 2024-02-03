@@ -20,11 +20,11 @@ resource "aws_subnet" "audisubnet" {
 resource "aws_route_table" "audirouttable" {
   vpc_id = aws_vpc.audivpc.id
 
-route {
+  route {
     cidr_block = "192.168.0.0/16"
-    gateway_id   = "local"
+    gateway_id = "local"
   }
- route {
+  route {
     cidr_block = "0.0.0.0/0"
     gateway_id = aws_internet_gateway.audigw.id
   }
@@ -52,38 +52,38 @@ resource "aws_security_group" "audisecurity" {
   vpc_id = aws_vpc.audivpc.id
 
   ingress = [{
-    protocol = "tcp"
-    from_port = 80
-    to_port = 80
-    cidr_blocks = [ "0.0.0.0/0" ]
-    description = "Inbound Terraform Security Group"
+    protocol         = "tcp"
+    from_port        = 80
+    to_port          = 80
+    cidr_blocks      = ["0.0.0.0/0"]
+    description      = "Inbound Terraform Security Group"
     ipv6_cidr_blocks = []
-    prefix_list_ids = []
-    security_groups = []
-    self = false
-    
-  },
-  {
-    protocol = -1
-    from_port = 0
-    to_port = 0
-    cidr_blocks = [ "0.0.0.0/0" ]
-    description = "Outbound Terraform Security Group"
-    ipv6_cidr_blocks = []
-    prefix_list_ids = []
-    security_groups = []
-    self = false 
-  },
-  {
-    protocol = "tcp"
-    from_port = 22
-    to_port = 22
-    cidr_blocks = [ "0.0.0.0/0" ]
-    description = "Inbound Terraform Security Group"
-    ipv6_cidr_blocks = []
-    prefix_list_ids = []
-    security_groups = []
-    self = false 
+    prefix_list_ids  = []
+    security_groups  = []
+    self             = false
+
+    },
+    {
+      protocol         = -1
+      from_port        = 0
+      to_port          = 0
+      cidr_blocks      = ["0.0.0.0/0"]
+      description      = "Outbound Terraform Security Group"
+      ipv6_cidr_blocks = []
+      prefix_list_ids  = []
+      security_groups  = []
+      self             = false
+    },
+    {
+      protocol         = "tcp"
+      from_port        = 22
+      to_port          = 22
+      cidr_blocks      = ["0.0.0.0/0"]
+      description      = "Inbound Terraform Security Group"
+      ipv6_cidr_blocks = []
+      prefix_list_ids  = []
+      security_groups  = []
+      self             = false
   }]
   egress {
     from_port        = 0
@@ -93,8 +93,8 @@ resource "aws_security_group" "audisecurity" {
     ipv6_cidr_blocks = ["::/0"]
   }
   tags = {
-   "Environment" = "DEV"
- }
+    "Environment" = "DEV"
+  }
 }
 
 
