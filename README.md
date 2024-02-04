@@ -11,6 +11,10 @@ EC2InstanceCreation - VPC , EC2 creation in AWS
 CountIndex - Counting loop using count meta argument
 foreach-list - for_each (lolist/loset) --> [()] meta argument
 foreach-map - for_each (map) --> {} meta argument
+lifestyle-prevent_destroy
+lifestyle-create_before_destroy
+lifestyle-ignore_changes
+lifestyle-replace_triggered_by
 
 Azure 
 
