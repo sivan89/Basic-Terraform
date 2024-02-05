@@ -15,6 +15,7 @@ lifestyle-prevent_destroy
 lifestyle-create_before_destroy
 lifestyle-ignore_changes
 lifestyle-replace_triggered_by
+InputVariable
 
 Azure 
 
