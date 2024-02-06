@@ -16,6 +16,11 @@ lifestyle-create_before_destroy
 lifestyle-ignore_changes
 lifestyle-replace_triggered_by
 InputVariable
+InputVariableLIST
+InputVariableSET
+InputVariableTUPLE
+InputVariableMAP
+InputVariableOBJECT and LIST(OBJECT) both are in the same folder
 
 Azure 
 
