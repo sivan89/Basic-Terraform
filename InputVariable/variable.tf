@@ -1,5 +1,8 @@
-variable "number" {
+variable "numofins" {
   type        = number
-  default     = 2
+  description = "Number of instance"
+}
+variable "typeofins" {
+  type        = string
   description = "Number of instance"
 }
