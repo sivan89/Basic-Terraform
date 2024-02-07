@@ -19,8 +19,6 @@ resource "aws_instance" "thulasiec2" {
         sudo systemctl start apache2
         EOF
 
-  tags = {
-    "Name" = "Thulasi-EC2-SYSTEM-01"
-  }
+  tags = var.tags
 
 }

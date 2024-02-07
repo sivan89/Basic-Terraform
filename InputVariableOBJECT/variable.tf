@@ -27,3 +27,12 @@ variable "ingress_rules" {
   }))
 }
 
+
+variable "tags" {
+  type = object({
+    Name     = string
+    Env      = string
+    NumOfIns = number
+  })
+  description = "ami id for thulasi medical"
+}

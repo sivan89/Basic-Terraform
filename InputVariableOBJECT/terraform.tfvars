@@ -13,3 +13,9 @@ ingress_rules = [{
   security_groups  = []
   self             = false
 }]
+
+tags = {
+  Env      = "PROD"
+  Name     = "AMI Name"
+  NumOfIns = 17
+}
