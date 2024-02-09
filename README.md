@@ -24,6 +24,9 @@ InputVariableOBJECT and LIST(OBJECT) both are in the same folder
 VariableValidation_OutputBlock --> Variable validation, Output Blocks , Terraform Functions
 LocalBlock
 EC2InstanceCreation -- updated backend block with AWS S3
+Import -- import from AWS using import command and to be continued in future there platform(here AWS)
+DataSourceBlock -- data source to access information about an existing resource
+
 
 Azure 
 
