@@ -26,6 +26,10 @@ LocalBlock
 EC2InstanceCreation -- updated backend block with AWS S3
 Import -- import from AWS using import command and to be continued in future there platform(here AWS)
 DataSourceBlock -- data source to access information about an existing resource
+Functions -- commands
+Modules -- Local Modules
+Expressions_functions -- Terraform Functions  
+Expressions_functions_if -- terraform Dynamic Expressions (if and for )
 
 
 Azure 
