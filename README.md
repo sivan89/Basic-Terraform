@@ -30,6 +30,11 @@ Functions -- commands
 Modules -- Local Modules
 Expressions_functions -- Terraform Functions  
 Expressions_functions_if -- terraform Dynamic Expressions (if and for )
+DynamicBlocks -- dynamically construct repeatable nested blocks  (if and for using(LIST,MAP) fir dynamic using blocks )
+FileProvisioners -- File Provisioner is used to copy files -- both ssh and winrm type of connections
+LocalEXECProvisioners -- local_exec provisioner invokes a local executable after a resource is created
+RemoteEXECProvisioners -- remote_exec provisioner invokes a script on a remote resource after it is created
+NULLResources -- If you need to run provisioners that aren't directly associated with a specific resource
 
 
 Azure 
